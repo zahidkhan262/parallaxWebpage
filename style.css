@@ -16,7 +16,27 @@
 #astro{position: absolute; top: 0; right: 0;}
 
 
+#astro1{animation: round 5s linear infinite;}
+#astro2{animation: trans 5s linear infinite;}
 
+@keyframes trans{
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes round{
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
 
 
 
