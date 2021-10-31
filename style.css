@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.image-section{
+    background: url(gal.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+#globe{
+    position: absolute; bottom: 0; z-index: 100000;
+}
+#astro{position: absolute; top: 0; right: 0;}
+
+
+
+
+
+
+
+.text-section{
+    position: relative;
+    padding: 100px;
+    height: 100vh;
+    width: 100%;
+    background: #161c2d;
+    
+}
+.text-section:hover{filter: grayscale(100%);}
+h2{color: crimson; margin-bottom: 20px;}
+p{color: aliceblue; line-height: 20px;}
+
+@media(max-width:776px){
+    .image-section{width: 100%;}
+    #globe{width: 400px;}
+    #astro{width: 400px;}
+}

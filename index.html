@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax || WebPage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+
+
+    <div class="image-section">
+        <img src="globe.png" alt="" id="globe">
+        <img src="astr01.png" alt="" id="astro">
+    </div>
+    <div class="text-section">
+        <h2>The Space</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit perspiciatis aspernatur officia
+            quibusdam doloremque odit, eveniet repellendus fuga! Aspernatur aliquam, numquam at in accusamus, dolor fuga
+            amet, quasi deserunt quidem commodi quia recusandae repellat eius fugiat atque qui reiciendis. Optio enim id
+            iste velit adipisci voluptatem saepe in totam perspiciatis. Iusto, sequi. Quos vero, nisi quo quidem autem
+            cum molestias accusamus illo unde vitae reiciendis odio repellendus possimus iure necessitatibus aliquid
+            voluptatem. Vel animi dolorum facere maiores, minus est necessitatibus perferendis ullam aut explicabo quia
+            voluptates deleniti unde vero. Molestias harum incidunt explicabo debitis totam vel id excepturi recusandae,
+            earum voluptas accusamus facere ipsam omnis ab sequi quos consequatur fugiat, autem quibusdam. Nostrum ipsam
+            voluptates quas maxime officia omnis cumque. Rem quia quidem quaerat non alias laboriosam modi et
+            aspernatur, explicabo repellendus placeat dolor. Reiciendis deleniti ipsum assumenda unde veritatis suscipit
+            sint. Blanditiis et cupiditate nesciunt, ipsam alias, dignissimos rerum neque iure voluptatibus illo facilis
+            minus ipsa praesentium illum! Veritatis ducimus quae sed consequatur voluptatem. Ut ipsam rerum, praesentium
+            aliquid iusto harum asperiores debitis id repellendus tenetur earum nisi amet distinctio fugit ratione
+            ducimus aut ea doloremque cum. Pariatur repellendus nihil illum quae accusamus fugit commodi ipsa nam maxime
+            animi.</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+
+
+    <script>
+        gsap.to('#astro', {
+            scrollTrigger: {
+                scrub: 0.5,
+            },
+            x: -1000,
+            y: 300,
+        })
+    </script>
+
+</body>
+
+</html>
